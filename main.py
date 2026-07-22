@@ -60,6 +60,9 @@ def home():
         id="text"
         placeholder="Enter word or phrase"
     >
+    <button onclick="startVoice()">
+🎤 Speak
+</button>
 
     <select id="source">
         <option value="english">English</option>
@@ -84,7 +87,28 @@ def home():
     <div id="result"></div>
 
     <script>
+    function startVoice() {
 
+    const SpeechRecognition =
+        window.SpeechRecognition ||
+        window.webkitSpeechRecognition;
+
+    if (!SpeechRecognition) {
+        alert("Speech recognition is not supported in this browser.");
+        return;
+    }
+
+    const recognition = new SpeechRecognition();
+
+    recognition.lang = "en-US";
+
+    recognition.onresult = function(event) {
+        document.getElementById("text").value =
+            event.results[0][0].transcript;
+    };
+
+    recognition.start();
+}
     async function translateText(){
 
         let text =
@@ -104,7 +128,11 @@ def home():
 
         document.getElementById("result").innerHTML =
             data.translation;
-    }
+          let speech = new SpeechSynthesisUtterance(
+    data.translation
+);
+
+window.speechSynthesis.speak(speech);
 
     </script>
 
