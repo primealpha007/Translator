@@ -20,13 +20,17 @@ def home():
         <title>English-Swahili-Kikuyu Translator</title>
 
         <style>
-            body{
-                font-family: Arial, sans-serif;
-                max-width: 800px;
-                margin: 50px auto;
-                padding: 20px;
-            }
+          body{
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
 
+    background-image: url('/static/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
             input, select{
                 width:100%;
                 padding:10px;
