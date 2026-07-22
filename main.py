@@ -1,9 +1,9 @@
-from fastapi.staticfiles import StaticFiles
-app = FastAPI()
-app.mount("/static", StaticFiles(directory="static"), name="static")
 from fastapi import FastAPI
 from fastapi.responses import HTMLResponse
 import pandas as pd
+app = FastAPI()
+
+app.mount("/static", StaticFiles(directory="static"), name="static")ssssssss
 
 app = FastAPI()
 
