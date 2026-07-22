@@ -1,11 +1,11 @@
 from fastapi import FastAPI
 from fastapi.responses import HTMLResponse
+from fastapi.staticfiles import StaticFiles
 import pandas as pd
-app = FastAPI()
-
-app.mount("/static", StaticFiles(directory="static"), name="static")ssssssss
 
 app = FastAPI()
+
+app.mount("/static", StaticFiles(directory="static"), name="static")
 
 # Load dictionary
 df = pd.read_csv("dictionary.csv")
@@ -26,7 +26,7 @@ def home():
     margin: 50px auto;
     padding: 20px;
 
-    background-image: url('/static/background.jpg');
+    background-image: url('/static/background.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
