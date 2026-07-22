@@ -26,7 +26,7 @@ def home():
     margin: 50px auto;
     padding: 20px;
 
-    background-image: url('/static/background.png');
+    background-image: url('/static/background.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
