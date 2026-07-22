@@ -59,6 +59,10 @@ def home():
         <option value="swahili">Swahili</option>
         <option value="kikuyu">Kikuyu</option>
     </select>
+    <button onclick="swapLanguages()">
+    🔄 Swap Languages
+</button>
+
 
     <select id="target">
         <option value="kikuyu">Kikuyu</option>
