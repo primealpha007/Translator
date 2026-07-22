@@ -87,28 +87,7 @@ def home():
     <div id="result"></div>
 
     <script>
-    function startVoice() {
-
-    const SpeechRecognition =
-        window.SpeechRecognition ||
-        window.webkitSpeechRecognition;
-
-    if (!SpeechRecognition) {
-        alert("Speech recognition is not supported in this browser.");
-        return;
-    }
-
-    const recognition = new SpeechRecognition();
-
-    recognition.lang = "en-US";
-
-    recognition.onresult = function(event) {
-        document.getElementById("text").value =
-            event.results[0][0].transcript;
-    };
-
-    recognition.start();
-}
+startVoice
     async function translateText(){
 
         let text =
