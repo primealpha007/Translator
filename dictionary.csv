@@ -16,11 +16,11 @@ help,saidia,koteizia
 and,na,na
 with,na,na
 to,kwa,kwa
-from,kutoka,kwakinya
+from,kutoka,kumako
 about,kuhusu,uhoro wa
 what,nini,neke
 who,nani,reko
-where,wapi,ha
+where,wapi,ku
 when,lini,le
 why,kwa nini,neke
 how,vipi,atya
@@ -39,15 +39,15 @@ father,baba,baba
 mother,mama,nyina
 brother,kaka,muro wa maito
 sister,dada,mware wa moito
-book,kitabu,chuo
+book,kitabu,ibuku
 house,nyumba,nyumba
-home,nyumbani,nyumba
+home,nyumbani,mosie
 school,shule,kosoma
 car,gari,ngarawa
-money,fedha,feza
+money,fedha,bia
 work,kazi,wera
 job,kazi,wera
-today,leo,reu
+today,leo,umothe
 yesterday,jana,ira
 tomorrow,kesho,ruci
 now,sasa,reu
@@ -218,7 +218,7 @@ breath,pumzi,morake
 bright,angavu,-a koara
 brighten,angaza,koara
 bring,leta,koleha
-broad,pana,-arie
+broad,pana,arie
 broken (to become),kuvunjika,koorageka
 broom,ufagio,kihato
 brute,mnyama,nyama
@@ -229,7 +229,8 @@ buffalo,nyati,ngati
 bug,kunguni,ngonguni
 build,jenga,koaka
 buildings,majengo,nyumba
-bull,ng'ombe dume,ndegwa
+bull,ng'ombe dumewor
+wo,wewa,ndegwa
 bullet,risasi,boroboro
 bully,dhulumu,kogita
 bundle,kifungu,mrigo
